@@ -152,7 +152,7 @@ samtools mpileup 21q_only.bam -ABd10000 | ./pileupToBed.pl -i - -m 3 -g 10 -r tr
 	-f 17p_only.m3_g10.bed \
 	-b 17p_only.bam \
 	-r $CUSTOM_GENOME_REFERENCE |\
- 	./annotate_hotspots__add_feature_distance.pl \ 
+ 	./annotate_hotspots__add_feature_distance.pl \
 	-i - \
 	-f 21q_only.m3_g10.bed \
 	-l 'closest 21q hotspot' |\
