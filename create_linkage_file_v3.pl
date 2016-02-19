@@ -11,7 +11,7 @@ sub usage {die "USAGE: " . basename($0) . " [-i Scenario A, B or C Bam infile (o
 
 # Store PE-read information
 my %reads;
-open (PIPE, "java -jar /share/apps/WGP-Toolkit/ReadPositionsFromBAM.jar -b $infile |") or die "ERROR: could not open PIPE for $infile.\n";
+open (PIPE, "java -jar WGP-Toolkit/build/ReadPositionsFromBAM.jar -b $infile |") or die "ERROR: could not open PIPE for $infile.\n";
 while (<PIPE>) {
         chomp;
         my @line 	= split(/\t/, $_);
