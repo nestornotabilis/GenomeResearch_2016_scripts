@@ -76,7 +76,7 @@ samtools index $ID\_badPairsOnly_unique_filtered.bam
 ./filter_oneline_links_by_ref.pl -i all.oneline.links -r XpYp > XpYp.links
 
 # Apply the Circos bundling script, bundlelinks. 
-bundlelinks \	
+bundlelinks \
 	-links 17p.links \
 	-max_gap 100 \
 	-min_bundle_membership 5 \
